@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    max-width: 1480px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 90%;
+    padding: 50px 0;
+    float: right;
+}
+
+.col-2 h2{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+/*
+.btn{
+     display: inline-block;
+    background: #03468ee1;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: all 0.6s ease; 
+}
+
+.btn:hover {
+    background-color: #6fc1f8c3;
+}
+*/
+
+
+.btn-2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border: 3px solid;
+    border-radius: 12px; /* Añadido para esquinas redondeadas */
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+    color: #fff; /* Añadido para que el texto cambie de color al pasar el mouse */
+}
+
+.btn-2 span:nth-child(n) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn-2 span:nth-child(1) {
+    right: 10%;
+    top: -10px;
+    background-color: #fff;
+}
+
+.btn-2 span:nth-child(2) {
+    left: 10%;
+    bottom: -10px;
+    background-color: #fff; /* Añadido para que tenga color de fondo */
+}
+
+.btn-2:hover span:nth-child(1) {
+    right: 80%;
+    transform: rotate(90deg);
+    background-color: var(--color);
+}
+
+.btn-2:hover span:nth-child(2) {
+    left: 80%;
+    transform: rotate(90deg);
+    background-color: var(--color);
+}
+
+
+:root {
+    --color: #003cff; /* Ejemplo de color */
+}
+
+.header{
+    background: radial-gradient(#fff,#d6edff);
+}
+
+.header row{
+    margin-top: 70px;
+}
